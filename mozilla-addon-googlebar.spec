@@ -4,7 +4,7 @@ Name:		mozilla-addon-googlebar
 %define		_realname	googlebar
 Version:	0.8
 %define	fver	0_8
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications/Networking
 Source0:	http://downloads.us-east3.mozdev.org/%{_realname}/%{fver}.xpi
@@ -18,7 +18,7 @@ Requires:	mozilla >= 1.0-7
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{_realname}-%{version}-root-%(id -u -n)
 
-%define		_chromedir	%{_libdir}/mozilla/chrome
+%define		_chromedir	%{_datadir}/mozilla/chrome
 
 %description
 Extended toolbar for Google search engine. It supports all features
