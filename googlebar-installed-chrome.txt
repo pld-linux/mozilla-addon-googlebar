@@ -1,2 +1,2 @@
-content,install,url,resource:/chrome/googlebar/content/
-locale,install,url,resource:/chrome/googlebar/locale/en-US/googlebar/
+content,install,url,jar:resource:/chrome/googlebar.jar!/content/
+locale,install,url,jar:resource:/chrome/googlebar.jar!/locale/en-US/googlebar/
