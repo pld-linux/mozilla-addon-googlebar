@@ -1,0 +1,2 @@
+content,install,url,resource:/chrome/googlebar/content/
+locale,install,url,resource:/chrome/googlebar/locale/en-US/googlebar/
