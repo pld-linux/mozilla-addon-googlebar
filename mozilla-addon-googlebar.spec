@@ -2,13 +2,13 @@ Summary:	Toolbar for Google search engine
 Summary(pl):	Pasek narzêdziowy dla wyszukiwarki Google
 Name:		mozilla-addon-googlebar
 %define		_realname	googlebar
-Version:	0.6.17
-%define	fver	0_6-17
+Version:	0.8
+%define	fver	0_8
 Release:	1
 License:	GPL
 Group:		X11/Applications/Networking
-Source0:	http://googlebar.mozdev.org/%{fver}.xpi
-# Source0-md5:	d09d41feaf0af96a55eb3aaf0704a6aa
+Source0:	http://downloads.us-east3.mozdev.org/%{_realname}/%{fver}.xpi
+# Source0-md5:	c321bb115f0fe503f27fefe01de36eb8
 Source1:	%{_realname}-installed-chrome.txt
 URL:		http://googlebar.mozdev.org/
 BuildRequires:	unzip
