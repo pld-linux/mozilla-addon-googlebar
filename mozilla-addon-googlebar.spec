@@ -1,5 +1,5 @@
 Summary:	Toolbar for Google search engine
-Summary(pl):	Pasek narzêdziowy dla wyszukiwarki Google
+Summary(pl.UTF-8):   Pasek narzÄ™dziowy dla wyszukiwarki Google
 Name:		mozilla-addon-googlebar
 %define		_realname	googlebar
 Version:	0.8
@@ -25,9 +25,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Extended toolbar for Google search engine. It supports all features
 of Google, Google Groups etc.
 
-%description -l pl
-Rozbudowany pasek narzêdziowy z dla wyszukiwarki Google. Mo¿na
-korzystaæ z wszystkich mo¿liwo¶ci Google, Google Groups itd...
+%description -l pl.UTF-8
+Rozbudowany pasek narzÄ™dziowy z dla wyszukiwarki Google. MoÅ¼na
+korzystaÄ‡ z wszystkich moÅ¼liwoÅ›ci Google, Google Groups itd...
 
 %prep
 %setup -q -c
