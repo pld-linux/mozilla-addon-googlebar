@@ -1,5 +1,5 @@
 Summary:	Toolbar for Google search engine
-Summary(pl.UTF-8):   Pasek narzędziowy dla wyszukiwarki Google
+Summary(pl.UTF-8):	Pasek narzędziowy dla wyszukiwarki Google
 Name:		mozilla-addon-googlebar
 %define		_realname	googlebar
 Version:	0.8
