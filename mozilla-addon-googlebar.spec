@@ -1,9 +1,9 @@
+%define		_realname	googlebar
+%define	fver	0_8
 Summary:	Toolbar for Google search engine
 Summary(pl.UTF-8):	Pasek narzędziowy dla wyszukiwarki Google
 Name:		mozilla-addon-googlebar
-%define		_realname	googlebar
 Version:	0.8
-%define	fver	0_8
 Release:	3
 License:	GPL
 Group:		X11/Applications/Networking
@@ -22,8 +22,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define		_chromedir	%{_datadir}/mozilla/chrome
 
 %description
-Extended toolbar for Google search engine. It supports all features
-of Google, Google Groups etc.
+Extended toolbar for Google search engine. It supports all features of
+Google, Google Groups etc.
 
 %description -l pl.UTF-8
 Rozbudowany pasek narzędziowy z dla wyszukiwarki Google. Można
@@ -46,10 +46,12 @@ install %{_realname}.jar $RPM_BUILD_ROOT%{_chromedir}
 rm -rf $RPM_BUILD_ROOT
 
 %post
-%{_sbindir}/mozilla-chrome+xpcom-generate
+if [ "$1" = 1 ]; then
+	%{_sbindir}/mozilla-chrome+xpcom-generate
+fi
 
 %postun
-%{_sbindir}/mozilla-chrome+xpcom-generate
+[ ! -x %{_sbindir}/mozilla-chrome+xpcom-generate ] || %{_sbindir}/mozilla-chrome+xpcom-generate
 
 %files
 %defattr(644,root,root,755)
